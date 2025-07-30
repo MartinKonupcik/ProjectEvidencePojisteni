@@ -11,7 +11,6 @@ namespace ProjectEvidencePojisteni
     {
         private List<PojisteneOsoby> osoby = new List<PojisteneOsoby>();
 
-
         public void PridatPojistence()
         {
             Console.WriteLine("Zadejte jméno pojisteneho:");
@@ -62,7 +61,6 @@ namespace ProjectEvidencePojisteni
                 o.Jmeno.Equals(jmeno, StringComparison.OrdinalIgnoreCase) &&
                 o.Prijmeni.Equals(prijmeni, StringComparison.OrdinalIgnoreCase)
             );
-
             if (nalezeny != null)
             {
                 Console.WriteLine("---------------------------------");
