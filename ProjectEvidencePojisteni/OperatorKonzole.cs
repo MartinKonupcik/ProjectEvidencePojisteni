@@ -9,12 +9,12 @@ namespace ProjectEvidencePojisteni
 {
     public static class OperatorKonzole
     {
-        public static void VypisPojistence(PojisteneOsoby pojistenaOsoba)
+        public static void VypisPojistence(PojistenaOsoba pojistenaOsoba)
         {
             Console.WriteLine(pojistenaOsoba.ToString());
         }
 
-        public static void VypisPojistenych(List<PojisteneOsoby> pojisteneOsoby)
+        public static void VypisPojistenych(List<PojistenaOsoba> pojisteneOsoby)
         {
             if (pojisteneOsoby.Count == 0)
             {
@@ -39,7 +39,7 @@ namespace ProjectEvidencePojisteni
             string? text = Console.ReadLine();
             while (string.IsNullOrWhiteSpace(text))
             {
-                Console.WriteLine("Zadejte neprázný text!!!");
+                Console.WriteLine("Zadejte neprázdný text!!!");
                 text = Console.ReadLine();
             }
             return text.Trim();

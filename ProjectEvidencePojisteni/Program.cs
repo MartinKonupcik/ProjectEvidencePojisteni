@@ -1,6 +1,4 @@
-﻿using ProjectEvidencePojisteni;
-
-var sprava = new Sprava();
+﻿var sprava = new Sprava();
 
 Console.WriteLine("---------------------------------");
 Console.WriteLine("Evidence Pojistenych");
@@ -23,19 +21,19 @@ while (choice != '5')
     switch (choice)
     {
         case '1':
-            
+            sprava.PridatPojistence();
             break;
 
         case '2':
-            
+            sprava.VypisPojistencu();
             break;
 
         case '3':
-           
+            sprava.VyhledatPojistenceJmenoiPrijmeni();
             break;
 
         case '4':
-            
+            sprava.VyhledatPojistenceJmenoNeboPrijmeni();
             break;
         case '5':
             Console.WriteLine("Děkuji za použití aplikace.");
@@ -44,6 +42,5 @@ while (choice != '5')
         default:
             Console.WriteLine("Neplatná volba. Zkuste to znovu.");
             break;
-
     }
 }
